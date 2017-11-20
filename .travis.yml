@@ -1,0 +1,9 @@
+language: php
+php:
+  - 7.1.9
+addons:
+  ssh_known_hosts: 165.227.118.254
+before_install:
+  - bash _scripts/install.sh
+after_success:
+  - bash _scripts/deploy.sh
